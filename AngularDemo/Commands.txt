@@ -1,0 +1,25 @@
+npm i @angular/cli -g
+
+npm uninstall -g angular-cli @angular/cli
+
+npm cache clean
+
+npm install -g @angular/cli@latest
+
+ng version
+
+ng new hotelinventoryapp --createApplication=false
+
+ng g app hotelinventory
+
+ng new hotelinventoryapp
+
+npx browserslist
+
+ng serve -o
+
+ng g c rooms
+
+****inspect mode: Control+P to open serch box to search any file, also works in VS Code
+
+
