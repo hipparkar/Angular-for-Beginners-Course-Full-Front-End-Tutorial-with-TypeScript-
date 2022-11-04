@@ -12,4 +12,5 @@ import { reduce } from 'rxjs';
 })
 export class AppComponent {
   title = 'hotelinventoryapp';
+  role = 'User';
 }

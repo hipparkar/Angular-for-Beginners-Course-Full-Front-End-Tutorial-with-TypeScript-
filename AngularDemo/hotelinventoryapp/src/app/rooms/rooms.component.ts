@@ -20,39 +20,42 @@ export class RoomsComponent implements OnInit {
     bookedRooms: 5,
   };
 
-  roomList: RoomList[] = [{
-    roomNumber: 1,
-    roomType: 'Deluxe Room',
-    amenities: 'Air Conditioner, Free Wifi, TC, Bathroom, Kitchen',
-    price: 500,
-    photos: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWwlMjByb29tfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-    checkinTime: new Date('30-Oct-2022'),
-    checkoutTime: new Date('31-Oct-2022'),
-  },
-  {
-    roomNumber: 2,
-    roomType: 'Deluxe Room',
-    amenities: 'Air Conditioner, Free Wifi, TC, Bathroom, Kitchen',
-    price: 1000,
-    photos: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWwlMjByb29tfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-    checkinTime: new Date('30-Oct-2022'),
-    checkoutTime: new Date('31-Oct-2022'),
-  },
-  {
-    roomNumber: 3,
-    roomType: 'Private Suite',
-    amenities: 'Air Conditioner, Free Wifi, TC, Bathroom, Kitchen',
-    price: 1500,
-    photos: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWwlMjByb29tfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-    checkinTime: new Date('30-Oct-2022'),
-    checkoutTime: new Date('31-Oct-2022'),
-  },
-  ]
-
+  roomList: RoomList[] = [];
 
   constructor() { }
 
   ngOnInit(): void {
+    this.roomList = [{
+      roomNumber: 1,
+      roomType: 'Deluxe Room',
+      amenities: 'Air Conditioner, Free Wifi, TV, Bathroom, Kitchen',
+      price: 500,
+      photos: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWwlMjByb29tfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+      checkinTime: new Date('30-Oct-2022'),
+      checkoutTime: new Date('31-Oct-2022'),
+      rating: 4.5,
+    },
+    {
+      roomNumber: 2,
+      roomType: 'Deluxe Room',
+      amenities: 'Air Conditioner, Free Wifi, TV, Bathroom, Kitchen',
+      price: 1000,
+      photos: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWwlMjByb29tfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+      checkinTime: new Date('30-Oct-2022'),
+      checkoutTime: new Date('31-Oct-2022'),
+      rating: 3.4554,
+    },
+    {
+      roomNumber: 3,
+      roomType: 'Private Suite',
+      amenities: 'Air Conditioner, Free Wifi, TV, Bathroom, Kitchen',
+      price: 1500,
+      photos: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWwlMjByb29tfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+      checkinTime: new Date('30-Oct-2022'),
+      checkoutTime: new Date('31-Oct-2022'),
+      rating: 2.6,
+    },
+    ]
   }
 
   toggle() {

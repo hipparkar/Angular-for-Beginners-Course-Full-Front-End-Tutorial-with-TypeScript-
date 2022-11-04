@@ -22,4 +22,4 @@ ng g c rooms
 
 ****inspect mode: Control+P to open serch box to search any file, also works in VS Code
 
-
+npm i bootstrap
