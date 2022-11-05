@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
 import { reduce } from 'rxjs';
+import { RoomsComponent } from './rooms/rooms.component';
 
 @Component({
   selector: 'hinv-root',
@@ -10,7 +11,19 @@ import { reduce } from 'rxjs';
   styleUrls: ['./app.component.scss'],
   // styles: [`h1 {color: red;}`],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'hotelinventoryapp';
-  role = 'User';
+
+  @ViewChild('name', {static: true}) name!: ElementRef;
+
+  ngOnInit() {
+    this.name.nativeElement.innerText = "Hilton Hotel";
+  }
+
+  // @ViewChild('user', { read: ViewContainerRef }) vcr!: ViewContainerRef;
+
+  // ngAfterViewInit() {
+  //   const componentRef = this.vcr.createComponent(RoomsComponent);
+  //   componentRef.instance.numberOfRooms = 50;
+  // }
 }
